@@ -9,18 +9,13 @@ def extract_unique_code(text):
 
 @dp.message(CommandStart())
 async def start_menu(message: types.Message):
-    exists = await user_exists(message.from_user.id)
+    exists = await user_exists("@" + message.from_user.username)
     if not exists:
-        referral = None
-        unique_code = extract_unique_code(message.text)
-        if unique_code and await user_exists(unique_code):
-            referral = unique_code
-
-        await add_user(user_id=message.from_user.id,
-                       fio=message.from_user.full_name,
-                       referral=referral)
-
-    await message.answer(f'👋 Приветствую, {message.from_user.full_name}!'
-                         f'\nНажимай на каталог для выбора пака!',
-                         reply_markup=keyboard_menu.main)
-    await message.delete()
+        await message.answer('Отказано в доступе пользования ботом')
+    else:
+        if not exists["fio"]:
+            await add_user(message.from_user.id, message.from_user.full_name, "@" + message.from_user.username)
+        await message.answer(f'👋 Приветствую, {message.from_user.full_name}!'
+                            f'\nНажимай на каталог для выбора пака!',
+                            reply_markup=keyboard_menu.main)
+        await message.delete()

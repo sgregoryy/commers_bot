@@ -12647,3 +12647,1373 @@ asyncgen: <async_generator object Dispatcher._listen_updates at 0x000001EC067B7B
 RuntimeError: aclose(): asynchronous generator is already running
 ERROR:asyncio:Task was destroyed but it is pending!
 task: <Task pending name='Task-11' coro=<clear_expired_basket_items() running at c:\Users\alhim\Documents\bots\aiogram\final_result\app.py:14> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @aiogramexperiencebot id=7064840472 - 'aiogram_bot'
+INFO:aiogram.event:Update id=778442815 is handled. Duration 297 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442816 is handled. Duration 297 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442817 is handled. Duration 375 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442818 is handled. Duration 172 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442819 is handled. Duration 452 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442820 is handled. Duration 327 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442821 is handled. Duration 3719 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442822 is handled. Duration 3594 ms by bot id=7064840472
+INFO:root:Checking for expired items at 2024-08-05 13:34:38.978095. Expiration time: 2024-08-05 13:04:38.978095
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 13:35:39.003399. Expiration time: 2024-08-05 13:05:39.003399
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 13:36:39.002342. Expiration time: 2024-08-05 13:06:39.002342
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 13:37:39.011796. Expiration time: 2024-08-05 13:07:39.011796
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 13:38:39.026685. Expiration time: 2024-08-05 13:08:39.026685
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 13:39:39.042409. Expiration time: 2024-08-05 13:09:39.042409
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 13:40:39.059832. Expiration time: 2024-08-05 13:10:39.059832
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 13:41:39.084661. Expiration time: 2024-08-05 13:11:39.084661
+INFO:root:No expired items found
+ERROR:asyncio:an error occurred during closing of asynchronous generator <async_generator object Dispatcher._listen_updates at 0x000001B40F18B740>
+asyncgen: <async_generator object Dispatcher._listen_updates at 0x000001B40F18B740>
+RuntimeError: aclose(): asynchronous generator is already running
+ERROR:asyncio:Task was destroyed but it is pending!
+task: <Task pending name='Task-11' coro=<clear_expired_basket_items() running at c:\Users\alhim\Documents\bots\aiogram\final_result\app.py:14> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @aiogramexperiencebot id=7064840472 - 'aiogram_bot'
+INFO:aiogram.event:Update id=778442906 is handled. Duration 484 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442905 is handled. Duration 484 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442907 is handled. Duration 827 ms by bot id=7064840472
+INFO:root:Checking for expired items at 2024-08-05 16:01:31.928229. Expiration time: 2024-08-05 15:31:31.928229
+INFO:root:Expired items: [<Record product_id=19>]
+INFO:root:Cleared expired items at 2024-08-05 16:01:31.950626
+INFO:root:Checking for expired items at 2024-08-05 16:02:31.964435. Expiration time: 2024-08-05 15:32:31.964435
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:03:31.990048. Expiration time: 2024-08-05 15:33:31.990048
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:04:31.996809. Expiration time: 2024-08-05 15:34:31.996809
+INFO:root:No expired items found
+ERROR:asyncio:an error occurred during closing of asynchronous generator <async_generator object Dispatcher._listen_updates at 0x0000022DF0853740>
+asyncgen: <async_generator object Dispatcher._listen_updates at 0x0000022DF0853740>
+RuntimeError: aclose(): asynchronous generator is already running
+ERROR:asyncio:Task was destroyed but it is pending!
+task: <Task pending name='Task-11' coro=<clear_expired_basket_items() running at c:\Users\alhim\Documents\bots\aiogram\final_result\app.py:14> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @aiogramexperiencebot id=7064840472 - 'aiogram_bot'
+INFO:aiogram.event:Update id=778442908 is handled. Duration 905 ms by bot id=7064840472
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7064840472)
+INFO:aiogram.dispatcher:Connection established (tryings = 1, bot id = 7064840472)
+INFO:aiogram.event:Update id=778442909 is not handled. Duration 15 ms by bot id=7064840472
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7064840472)
+INFO:aiogram.event:Update id=778442910 is not handled. Duration 15 ms by bot id=7064840472
+INFO:aiogram.dispatcher:Connection established (tryings = 1, bot id = 7064840472)
+INFO:aiogram.event:Update id=778442911 is not handled. Duration 0 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442912 is handled. Duration 390 ms by bot id=7064840472
+INFO:root:Checking for expired items at 2024-08-05 16:05:45.588393. Expiration time: 2024-08-05 15:35:45.588393
+INFO:root:No expired items found
+INFO:aiogram.event:Update id=778442913 is not handled. Duration 47 ms by bot id=7064840472
+ERROR:aiogram.event:Cause exception while process update id=778442913 by bot id=7064840472
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\handlers\users\admin.py", line 70, in adminPanel
+    if await user_is_admin(messsage.from_user.id):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\utils\db_api\db_asyncpg.py", line 214, in user_is_admin
+    return result['isadmin']
+           ~~~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+INFO:root:Checking for expired items at 2024-08-05 16:06:45.597676. Expiration time: 2024-08-05 15:36:45.597676
+INFO:root:No expired items found
+INFO:aiogram.event:Update id=778442914 is not handled. Duration 30 ms by bot id=7064840472
+ERROR:aiogram.event:Cause exception while process update id=778442914 by bot id=7064840472
+InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\handlers\users\keyboard_menu.py", line 21, in show_balance
+    balance = await get_user_balance(message.from_user.id)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\utils\db_api\db_asyncpg.py", line 110, in get_user_balance
+    decimal_val = Decimal(str(value))
+                  ^^^^^^^^^^^^^^^^^^^
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+INFO:aiogram.event:Update id=778442915 is handled. Duration 405 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442916 is handled. Duration 516 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442917 is not handled. Duration 0 ms by bot id=7064840472
+INFO:root:Checking for expired items at 2024-08-05 16:07:45.613567. Expiration time: 2024-08-05 15:37:45.613567
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:08:45.624470. Expiration time: 2024-08-05 15:38:45.624470
+INFO:root:No expired items found
+ERROR:asyncio:an error occurred during closing of asynchronous generator <async_generator object Dispatcher._listen_updates at 0x00000194CEAD2FC0>
+asyncgen: <async_generator object Dispatcher._listen_updates at 0x00000194CEAD2FC0>
+RuntimeError: aclose(): asynchronous generator is already running
+ERROR:asyncio:Task was destroyed but it is pending!
+task: <Task pending name='Task-11' coro=<clear_expired_basket_items() running at c:\Users\alhim\Documents\bots\aiogram\final_result\app.py:14> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @aiogramexperiencebot id=7064840472 - 'aiogram_bot'
+INFO:aiogram.event:Update id=778442918 is handled. Duration 625 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442919 is handled. Duration 327 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442920 is not handled. Duration 0 ms by bot id=7064840472
+ERROR:aiogram.event:Cause exception while process update id=778442920 by bot id=7064840472
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\handlers\users\inline_menu.py", line 163, in handle_adding
+    await try_edit_call(call, "Введите количество необходимых кодов(Для возврата в Каталог нажмите кнопку Отмена):", types.ReplyKeyboardMarkup('Отмена'))
+                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+INFO:aiogram.event:Update id=778442921 is not handled. Duration 0 ms by bot id=7064840472
+ERROR:aiogram.event:Cause exception while process update id=778442921 by bot id=7064840472
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\handlers\users\inline_menu.py", line 163, in handle_adding
+    await try_edit_call(call, "Введите количество необходимых кодов(Для возврата в Каталог нажмите кнопку Отмена):", types.ReplyKeyboardMarkup('Отмена'))
+                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+INFO:root:Checking for expired items at 2024-08-05 16:13:36.383650. Expiration time: 2024-08-05 15:43:36.383650
+INFO:root:No expired items found
+ERROR:asyncio:an error occurred during closing of asynchronous generator <async_generator object Dispatcher._listen_updates at 0x0000022133EC3380>
+asyncgen: <async_generator object Dispatcher._listen_updates at 0x0000022133EC3380>
+RuntimeError: aclose(): asynchronous generator is already running
+ERROR:asyncio:Task was destroyed but it is pending!
+task: <Task pending name='Task-11' coro=<clear_expired_basket_items() running at c:\Users\alhim\Documents\bots\aiogram\final_result\app.py:14> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @aiogramexperiencebot id=7064840472 - 'aiogram_bot'
+INFO:aiogram.event:Update id=778442922 is not handled. Duration 15 ms by bot id=7064840472
+ERROR:aiogram.event:Cause exception while process update id=778442922 by bot id=7064840472
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\handlers\users\inline_menu.py", line 163, in handle_adding
+    await try_edit_call(call, text="Введите количество необходимых кодов(Для возврата в Каталог нажмите кнопку Отмена):", markup=types.ReplyKeyboardMarkup('Отмена'))
+                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+INFO:aiogram.event:Update id=778442923 is not handled. Duration 15 ms by bot id=7064840472
+ERROR:aiogram.event:Cause exception while process update id=778442923 by bot id=7064840472
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\handlers\users\inline_menu.py", line 163, in handle_adding
+    await try_edit_call(call, text="Введите количество необходимых кодов(Для возврата в Каталог нажмите кнопку Отмена):", markup=types.ReplyKeyboardMarkup('Отмена'))
+                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+INFO:root:Checking for expired items at 2024-08-05 16:14:59.664318. Expiration time: 2024-08-05 15:44:59.664318
+INFO:root:No expired items found
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7064840472)
+INFO:aiogram.dispatcher:Connection established (tryings = 1, bot id = 7064840472)
+ERROR:asyncio:an error occurred during closing of asynchronous generator <async_generator object Dispatcher._listen_updates at 0x000001FAD8E93240>
+asyncgen: <async_generator object Dispatcher._listen_updates at 0x000001FAD8E93240>
+RuntimeError: aclose(): asynchronous generator is already running
+ERROR:asyncio:Task was destroyed but it is pending!
+task: <Task pending name='Task-11' coro=<clear_expired_basket_items() running at c:\Users\alhim\Documents\bots\aiogram\final_result\app.py:14> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @aiogramexperiencebot id=7064840472 - 'aiogram_bot'
+INFO:aiogram.event:Update id=778442924 is not handled. Duration 0 ms by bot id=7064840472
+ERROR:aiogram.event:Cause exception while process update id=778442924 by bot id=7064840472
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\handlers\users\inline_menu.py", line 165, in handle_adding
+    [types.KeyboardButton('Отмена')]
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+INFO:aiogram.event:Update id=778442925 is handled. Duration 281 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442926 is handled. Duration 108 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442927 is not handled. Duration 0 ms by bot id=7064840472
+ERROR:aiogram.event:Cause exception while process update id=778442927 by bot id=7064840472
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\handlers\users\inline_menu.py", line 165, in handle_adding
+    [types.KeyboardButton('Отмена')]
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+INFO:aiogram.event:Update id=778442928 is not handled. Duration 0 ms by bot id=7064840472
+ERROR:aiogram.event:Cause exception while process update id=778442928 by bot id=7064840472
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\handlers\users\inline_menu.py", line 165, in handle_adding
+    [types.KeyboardButton('Отмена')]
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+INFO:root:Checking for expired items at 2024-08-05 16:16:37.934327. Expiration time: 2024-08-05 15:46:37.934327
+INFO:root:No expired items found
+ERROR:asyncio:an error occurred during closing of asynchronous generator <async_generator object Dispatcher._listen_updates at 0x0000026332A1F380>
+asyncgen: <async_generator object Dispatcher._listen_updates at 0x0000026332A1F380>
+RuntimeError: aclose(): asynchronous generator is already running
+ERROR:asyncio:Task was destroyed but it is pending!
+task: <Task pending name='Task-11' coro=<clear_expired_basket_items() running at c:\Users\alhim\Documents\bots\aiogram\final_result\app.py:14> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @aiogramexperiencebot id=7064840472 - 'aiogram_bot'
+INFO:aiogram.event:Update id=778442929 is handled. Duration 594 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442930 is handled. Duration 422 ms by bot id=7064840472
+INFO:root:Checking for expired items at 2024-08-05 16:18:04.383936. Expiration time: 2024-08-05 15:48:04.383936
+INFO:root:No expired items found
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7064840472)
+INFO:aiogram.dispatcher:Connection established (tryings = 1, bot id = 7064840472)
+INFO:root:Checking for expired items at 2024-08-05 16:19:04.394134. Expiration time: 2024-08-05 15:49:04.394134
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:20:04.412672. Expiration time: 2024-08-05 15:50:04.412672
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:21:04.426653. Expiration time: 2024-08-05 15:51:04.426653
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:22:04.435721. Expiration time: 2024-08-05 15:52:04.435721
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:23:04.450493. Expiration time: 2024-08-05 15:53:04.450493
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:24:04.470827. Expiration time: 2024-08-05 15:54:04.470827
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:25:04.478439. Expiration time: 2024-08-05 15:55:04.478439
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:26:04.495328. Expiration time: 2024-08-05 15:56:04.495328
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:27:04.508473. Expiration time: 2024-08-05 15:57:04.508473
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:28:04.525728. Expiration time: 2024-08-05 15:58:04.525728
+INFO:root:No expired items found
+ERROR:asyncio:an error occurred during closing of asynchronous generator <async_generator object Dispatcher._listen_updates at 0x000001419987F880>
+asyncgen: <async_generator object Dispatcher._listen_updates at 0x000001419987F880>
+RuntimeError: aclose(): asynchronous generator is already running
+ERROR:asyncio:Task was destroyed but it is pending!
+task: <Task pending name='Task-11' coro=<clear_expired_basket_items() running at c:\Users\alhim\Documents\bots\aiogram\final_result\app.py:14> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @aiogramexperiencebot id=7064840472 - 'aiogram_bot'
+INFO:aiogram.event:Update id=778442931 is handled. Duration 625 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442932 is handled. Duration 297 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442933 is handled. Duration 202 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442934 is handled. Duration 233 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442935 is not handled. Duration 0 ms by bot id=7064840472
+ERROR:aiogram.event:Cause exception while process update id=778442935 by bot id=7064840472
+TypeError: try_edit_call() missing 1 required positional argument: 'markup'
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\handlers\users\inline_menu.py", line 163, in handle_adding
+    await try_edit_call(call, text="Введите количество необходимых кодов(Для возврата в Каталог введите Отмена):")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: try_edit_call() missing 1 required positional argument: 'markup'
+INFO:root:Checking for expired items at 2024-08-05 16:30:15.209556. Expiration time: 2024-08-05 16:00:15.209556
+INFO:root:No expired items found
+ERROR:asyncio:an error occurred during closing of asynchronous generator <async_generator object Dispatcher._listen_updates at 0x0000023E74AD3380>
+asyncgen: <async_generator object Dispatcher._listen_updates at 0x0000023E74AD3380>
+RuntimeError: aclose(): asynchronous generator is already running
+ERROR:asyncio:Task was destroyed but it is pending!
+task: <Task pending name='Task-11' coro=<clear_expired_basket_items() running at c:\Users\alhim\Documents\bots\aiogram\final_result\app.py:14> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @aiogramexperiencebot id=7064840472 - 'aiogram_bot'
+INFO:aiogram.event:Update id=778442936 is handled. Duration 406 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442937 is handled. Duration 405 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442938 is handled. Duration 203 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442939 is not handled. Duration 0 ms by bot id=7064840472
+ERROR:aiogram.event:Cause exception while process update id=778442939 by bot id=7064840472
+ValueError: invalid literal for int() with base 10: 'отмена'
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\handlers\users\inline_menu.py", line 178, in handle_count
+    if int(data["count"]) > count:
+       ^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'отмена'
+ERROR:asyncio:an error occurred during closing of asynchronous generator <async_generator object Dispatcher._listen_updates at 0x000001F618863240>
+asyncgen: <async_generator object Dispatcher._listen_updates at 0x000001F618863240>
+RuntimeError: aclose(): asynchronous generator is already running
+ERROR:asyncio:Task was destroyed but it is pending!
+task: <Task pending name='Task-11' coro=<clear_expired_basket_items() running at c:\Users\alhim\Documents\bots\aiogram\final_result\app.py:14> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @aiogramexperiencebot id=7064840472 - 'aiogram_bot'
+INFO:aiogram.event:Update id=778442940 is handled. Duration 547 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442941 is handled. Duration 234 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442942 is handled. Duration 390 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442943 is handled. Duration 234 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442944 is handled. Duration 140 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442945 is handled. Duration 312 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442946 is handled. Duration 202 ms by bot id=7064840472
+INFO:root:Checking for expired items at 2024-08-05 16:32:39.818144. Expiration time: 2024-08-05 16:02:39.818144
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:33:39.821207. Expiration time: 2024-08-05 16:03:39.821207
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:34:39.842606. Expiration time: 2024-08-05 16:04:39.842606
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:35:39.866605. Expiration time: 2024-08-05 16:05:39.866605
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:36:39.872086. Expiration time: 2024-08-05 16:06:39.872086
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:37:39.883429. Expiration time: 2024-08-05 16:07:39.883429
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:38:39.895456. Expiration time: 2024-08-05 16:08:39.895456
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:39:39.900062. Expiration time: 2024-08-05 16:09:39.900062
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:40:39.920446. Expiration time: 2024-08-05 16:10:39.920446
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:41:39.919704. Expiration time: 2024-08-05 16:11:39.919704
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:42:39.921673. Expiration time: 2024-08-05 16:12:39.921673
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:43:39.938322. Expiration time: 2024-08-05 16:13:39.938322
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:44:39.942679. Expiration time: 2024-08-05 16:14:39.942679
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 16:45:39.964315. Expiration time: 2024-08-05 16:15:39.964315
+INFO:root:No expired items found
+ERROR:asyncio:an error occurred during closing of asynchronous generator <async_generator object Dispatcher._listen_updates at 0x000002141FCA74C0>
+asyncgen: <async_generator object Dispatcher._listen_updates at 0x000002141FCA74C0>
+RuntimeError: aclose(): asynchronous generator is already running
+ERROR:asyncio:Task was destroyed but it is pending!
+task: <Task pending name='Task-11' coro=<clear_expired_basket_items() running at c:\Users\alhim\Documents\bots\aiogram\final_result\app.py:14> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @aiogramexperiencebot id=7064840472 - 'aiogram_bot'
+INFO:aiogram.event:Update id=778442947 is not handled. Duration 15 ms by bot id=7064840472
+ERROR:aiogram.event:Cause exception while process update id=778442947 by bot id=7064840472
+UndefinedColumnError: столбец "sg_aaaaaaaaa" не существует
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\handlers\users\commands.py", line 12, in start_menu
+    exists = await user_exists("@"+message.from_user.username)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\utils\db_api\db_asyncpg.py", line 200, in user_exists
+    result = await connection.fetchrow(f'SELECT "username" FROM "users" WHERE "username"={user_id}')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\asyncpg\connection.py", line 749, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\asyncpg\connection.py", line 1794, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\asyncpg\connection.py", line 1892, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\asyncpg\connection.py", line 1925, in _do_execute
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\asyncpg\connection.py", line 433, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg\protocol\protocol.pyx", line 166, in prepare
+asyncpg.exceptions.UndefinedColumnError: столбец "sg_aaaaaaaaa" не существует
+INFO:root:Checking for expired items at 2024-08-05 17:19:09.494147. Expiration time: 2024-08-05 16:49:09.494147
+INFO:root:No expired items found
+ERROR:asyncio:an error occurred during closing of asynchronous generator <async_generator object Dispatcher._listen_updates at 0x0000013C1CCEEFC0>
+asyncgen: <async_generator object Dispatcher._listen_updates at 0x0000013C1CCEEFC0>
+RuntimeError: aclose(): asynchronous generator is already running
+ERROR:asyncio:Task was destroyed but it is pending!
+task: <Task pending name='Task-11' coro=<clear_expired_basket_items() running at c:\Users\alhim\Documents\bots\aiogram\final_result\app.py:14> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @aiogramexperiencebot id=7064840472 - 'aiogram_bot'
+INFO:aiogram.event:Update id=778442948 is not handled. Duration 30 ms by bot id=7064840472
+ERROR:aiogram.event:Cause exception while process update id=778442948 by bot id=7064840472
+UndefinedColumnError: столбец "sg_aaaaaaaaa" не существует
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\handlers\users\commands.py", line 12, in start_menu
+    exists = await user_exists("@" + message.from_user.username)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\utils\db_api\db_asyncpg.py", line 200, in user_exists
+    result = await connection.fetchrow(f'SELECT "username" FROM "users" WHERE "username"={user_id}')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\asyncpg\connection.py", line 749, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\asyncpg\connection.py", line 1794, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\asyncpg\connection.py", line 1892, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\asyncpg\connection.py", line 1925, in _do_execute
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\asyncpg\connection.py", line 433, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg\protocol\protocol.pyx", line 166, in prepare
+asyncpg.exceptions.UndefinedColumnError: столбец "sg_aaaaaaaaa" не существует
+ERROR:asyncio:an error occurred during closing of asynchronous generator <async_generator object Dispatcher._listen_updates at 0x000001BD47E1F240>
+asyncgen: <async_generator object Dispatcher._listen_updates at 0x000001BD47E1F240>
+RuntimeError: aclose(): asynchronous generator is already running
+ERROR:asyncio:Task was destroyed but it is pending!
+task: <Task pending name='Task-11' coro=<clear_expired_basket_items() running at c:\Users\alhim\Documents\bots\aiogram\final_result\app.py:14> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @aiogramexperiencebot id=7064840472 - 'aiogram_bot'
+INFO:aiogram.event:Update id=778442949 is handled. Duration 827 ms by bot id=7064840472
+INFO:root:Checking for expired items at 2024-08-05 17:22:05.959999. Expiration time: 2024-08-05 16:52:05.959999
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 17:23:05.960594. Expiration time: 2024-08-05 16:53:05.960594
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 17:24:05.978960. Expiration time: 2024-08-05 16:54:05.978960
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 17:25:05.991377. Expiration time: 2024-08-05 16:55:05.991377
+INFO:root:No expired items found
+ERROR:asyncio:an error occurred during closing of asynchronous generator <async_generator object Dispatcher._listen_updates at 0x0000027C092D3880>
+asyncgen: <async_generator object Dispatcher._listen_updates at 0x0000027C092D3880>
+RuntimeError: aclose(): asynchronous generator is already running
+ERROR:asyncio:Task was destroyed but it is pending!
+task: <Task pending name='Task-11' coro=<clear_expired_basket_items() running at c:\Users\alhim\Documents\bots\aiogram\final_result\app.py:14> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @aiogramexperiencebot id=7064840472 - 'aiogram_bot'
+INFO:aiogram.event:Update id=778442955 is not handled. Duration 45 ms by bot id=7064840472
+ERROR:aiogram.event:Cause exception while process update id=778442955 by bot id=7064840472
+TypeError: bad operand type for unary ~: 'str'
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\handlers\users\commands.py", line 16, in start_menu
+    if ~exists["fio"]:
+       ^^^^^^^^^^^^^^
+TypeError: bad operand type for unary ~: 'str'
+INFO:aiogram.event:Update id=778442954 is not handled. Duration 140 ms by bot id=7064840472
+ERROR:aiogram.event:Cause exception while process update id=778442954 by bot id=7064840472
+TypeError: bad operand type for unary ~: 'str'
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\handlers\users\commands.py", line 16, in start_menu
+    if ~exists["fio"]:
+       ^^^^^^^^^^^^^^
+TypeError: bad operand type for unary ~: 'str'
+INFO:aiogram.event:Update id=778442956 is not handled. Duration 140 ms by bot id=7064840472
+ERROR:aiogram.event:Cause exception while process update id=778442956 by bot id=7064840472
+TypeError: bad operand type for unary ~: 'str'
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\handlers\users\commands.py", line 16, in start_menu
+    if ~exists["fio"]:
+       ^^^^^^^^^^^^^^
+TypeError: bad operand type for unary ~: 'str'
+INFO:aiogram.event:Update id=778442953 is not handled. Duration 140 ms by bot id=7064840472
+ERROR:aiogram.event:Cause exception while process update id=778442953 by bot id=7064840472
+InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\handlers\users\keyboard_menu.py", line 23, in show_balance
+    balance = await get_user_balance(message.from_user.id)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\utils\db_api\db_asyncpg.py", line 113, in get_user_balance
+    decimal_val = Decimal(str(value))
+                  ^^^^^^^^^^^^^^^^^^^
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+INFO:aiogram.event:Update id=778442950 is not handled. Duration 140 ms by bot id=7064840472
+ERROR:aiogram.event:Cause exception while process update id=778442950 by bot id=7064840472
+TypeError: bad operand type for unary ~: 'str'
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\handlers\users\commands.py", line 16, in start_menu
+    if ~exists["fio"]:
+       ^^^^^^^^^^^^^^
+TypeError: bad operand type for unary ~: 'str'
+INFO:aiogram.event:Update id=778442951 is handled. Duration 420 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442952 is handled. Duration 437 ms by bot id=7064840472
+INFO:root:Checking for expired items at 2024-08-05 18:43:04.463500. Expiration time: 2024-08-05 18:13:04.463500
+INFO:root:No expired items found
+INFO:aiogram.event:Update id=778442957 is not handled. Duration 15 ms by bot id=7064840472
+ERROR:aiogram.event:Cause exception while process update id=778442957 by bot id=7064840472
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\handlers\users\admin.py", line 70, in adminPanel
+    if await user_is_admin(messsage.from_user.id):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\utils\db_api\db_asyncpg.py", line 217, in user_is_admin
+    return result['isadmin']
+           ~~~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+INFO:root:Checking for expired items at 2024-08-05 18:44:04.478057. Expiration time: 2024-08-05 18:14:04.478057
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 18:45:04.501871. Expiration time: 2024-08-05 18:15:04.501871
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 18:46:04.523418. Expiration time: 2024-08-05 18:16:04.523418
+INFO:root:No expired items found
+INFO:aiogram.event:Update id=778442958 is handled. Duration 359 ms by bot id=7064840472
+INFO:root:Checking for expired items at 2024-08-05 18:47:04.527624. Expiration time: 2024-08-05 18:17:04.527624
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 18:48:04.540632. Expiration time: 2024-08-05 18:18:04.540632
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 18:49:04.557232. Expiration time: 2024-08-05 18:19:04.557232
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 18:50:04.570734. Expiration time: 2024-08-05 18:20:04.570734
+INFO:root:No expired items found
+ERROR:asyncio:an error occurred during closing of asynchronous generator <async_generator object Dispatcher._listen_updates at 0x000002356FFCB600>
+asyncgen: <async_generator object Dispatcher._listen_updates at 0x000002356FFCB600>
+RuntimeError: aclose(): asynchronous generator is already running
+ERROR:asyncio:Task was destroyed but it is pending!
+task: <Task pending name='Task-11' coro=<clear_expired_basket_items() running at c:\Users\alhim\Documents\bots\aiogram\final_result\app.py:14> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @aiogramexperiencebot id=7064840472 - 'aiogram_bot'
+INFO:aiogram.event:Update id=778442985 is handled. Duration 359 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442986 is handled. Duration 375 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442987 is handled. Duration 109 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442988 is handled. Duration 406 ms by bot id=7064840472
+INFO:root:Checking for expired items at 2024-08-05 19:20:08.501333. Expiration time: 2024-08-05 18:50:08.501333
+INFO:root:No expired items found
+INFO:aiogram.event:Update id=778442989 is handled. Duration 280 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442990 is handled. Duration 436 ms by bot id=7064840472
+INFO:root:Checking for expired items at 2024-08-05 19:21:08.530396. Expiration time: 2024-08-05 18:51:08.530396
+INFO:root:No expired items found
+INFO:aiogram.event:Update id=778442991 is handled. Duration 359 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442992 is handled. Duration 219 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442993 is handled. Duration 172 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442994 is handled. Duration 577 ms by bot id=7064840472
+INFO:aiogram.event:Update id=778442995 is not handled. Duration 15 ms by bot id=7064840472
+ERROR:aiogram.event:Cause exception while process update id=778442995 by bot id=7064840472
+TypeError: add_user() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\handlers\users\commands.py", line 17, in start_menu
+    add_user(message.from_user.id, message.from_user.full_name, "@" + message.from_user.username)
+TypeError: add_user() takes 1 positional argument but 3 were given
+INFO:root:Checking for expired items at 2024-08-05 19:22:08.542584. Expiration time: 2024-08-05 18:52:08.542584
+INFO:root:No expired items found
+ERROR:asyncio:an error occurred during closing of asynchronous generator <async_generator object Dispatcher._listen_updates at 0x0000020C3286F380>
+asyncgen: <async_generator object Dispatcher._listen_updates at 0x0000020C3286F380>
+RuntimeError: aclose(): asynchronous generator is already running
+ERROR:asyncio:Task was destroyed but it is pending!
+task: <Task pending name='Task-11' coro=<clear_expired_basket_items() running at c:\Users\alhim\Documents\bots\aiogram\final_result\app.py:14> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @aiogramexperiencebot id=7064840472 - 'aiogram_bot'
+INFO:aiogram.event:Update id=778442996 is handled. Duration 407 ms by bot id=7064840472
+ERROR:asyncio:an error occurred during closing of asynchronous generator <async_generator object Dispatcher._listen_updates at 0x000001CCC9D5B600>
+asyncgen: <async_generator object Dispatcher._listen_updates at 0x000001CCC9D5B600>
+RuntimeError: aclose(): asynchronous generator is already running
+ERROR:asyncio:Task was destroyed but it is pending!
+task: <Task pending name='Task-11' coro=<clear_expired_basket_items() running at c:\Users\alhim\Documents\bots\aiogram\final_result\app.py:14> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @aiogramexperiencebot id=7064840472 - 'aiogram_bot'
+INFO:aiogram.event:Update id=778442997 is handled. Duration 359 ms by bot id=7064840472
+INFO:root:Checking for expired items at 2024-08-05 19:24:53.292965. Expiration time: 2024-08-05 18:54:53.292965
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 19:25:53.307859. Expiration time: 2024-08-05 18:55:53.307859
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 19:26:53.323972. Expiration time: 2024-08-05 18:56:53.323972
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 19:27:53.342726. Expiration time: 2024-08-05 18:57:53.342726
+INFO:root:No expired items found
+ERROR:asyncio:an error occurred during closing of asynchronous generator <async_generator object Dispatcher._listen_updates at 0x000001B15A15F4C0>
+asyncgen: <async_generator object Dispatcher._listen_updates at 0x000001B15A15F4C0>
+RuntimeError: aclose(): asynchronous generator is already running
+ERROR:asyncio:Task was destroyed but it is pending!
+task: <Task pending name='Task-11' coro=<clear_expired_basket_items() running at c:\Users\alhim\Documents\bots\aiogram\final_result\app.py:14> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @jerksmessagesstatsbot id=7236458100 - 'statsbot'
+INFO:aiogram.event:Update id=224057564 is handled. Duration 422 ms by bot id=7236458100
+INFO:aiogram.event:Update id=224057565 is not handled. Duration 15 ms by bot id=7236458100
+ERROR:aiogram.event:Cause exception while process update id=224057565 by bot id=7236458100
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\handlers\users\admin.py", line 70, in adminPanel
+    if await user_is_admin(messsage.from_user.id):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\alhim\Documents\bots\aiogram\final_result\utils\db_api\db_asyncpg.py", line 217, in user_is_admin
+    return result['isadmin']
+           ~~~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+INFO:root:Checking for expired items at 2024-08-05 20:05:35.475810. Expiration time: 2024-08-05 19:35:35.475810
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 20:06:35.479951. Expiration time: 2024-08-05 19:36:35.479951
+INFO:root:No expired items found
+INFO:root:Checking for expired items at 2024-08-05 20:07:35.481050. Expiration time: 2024-08-05 19:37:35.481050
+INFO:root:No expired items found
+ERROR:asyncio:an error occurred during closing of asynchronous generator <async_generator object Dispatcher._listen_updates at 0x0000022846B1F100>
+asyncgen: <async_generator object Dispatcher._listen_updates at 0x0000022846B1F100>
+RuntimeError: aclose(): asynchronous generator is already running
+ERROR:asyncio:Task was destroyed but it is pending!
+task: <Task pending name='Task-11' coro=<clear_expired_basket_items() running at c:\Users\alhim\Documents\bots\aiogram\final_result\app.py:14> wait_for=<Future pending cb=[Task.task_wakeup()]>>

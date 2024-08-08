@@ -14,7 +14,9 @@ async def show_catalog(message: types.Message):
 
 @dp.message(F.text.in_(['🛍️ Корзина', 'корзина']))
 async def show_basket(message: types.Message):
-    await send_basket(chat_id=message.chat.id, user_id=message.chat.id)
+    exists = await user_exists('@' + message.from_user.username)
+    if exists:
+        await send_basket(chat_id=message.chat.id, user_id=message.chat.id)
 
 @dp.message(F.text.in_(['💲 Баланс', 'баланс']))
 async def show_balance(message: types.Message):

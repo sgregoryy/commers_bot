@@ -1,6 +1,6 @@
 import os
 
-BOT_TOKEN = '7064840472:AAE-OGVTrMo96PHmMxWaJxR8lnqsUA07v4Q'
+BOT_TOKEN = '7236458100:AAEl9gpEFHkvkCBV0EKtaKHGs-FQfma0n-Q'
 PAYMENT_TOKEN = ""
 
 manager_url = "t.me/marssak"

@@ -4,6 +4,9 @@ class PriceUpdate(StatesGroup):
     waiting_for_price = State()
     amount = State()
 
+class AddingUsers(StatesGroup):
+    waiting_for_users = State()
+
 class PromoCodeState(StatesGroup):
     waiting_for_promocodes = State()
 

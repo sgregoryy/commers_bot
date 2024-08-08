@@ -35,7 +35,7 @@ async def basket_menu(call: types.CallbackQuery):
 
 @dp.callback_query(F.data=='clearBasket')
 async def clearBasket(call: types.CallbackQuery):
-    await clear_cart(user_id=call.from_user.id)
+    await button_clear_cart(user_id=call.from_user.id)
     # await send_basket(chat_id=call.message.chat.id, user_id=call.from_user.id)
     await try_edit_call(call, 'Корзина очищена!', None)
     # await call.message.answer()
@@ -160,9 +160,14 @@ async def tovar_info_menu(call: types.CallbackQuery, state: FSMContext):
 @dp.callback_query(F.data == 'addingToBasket')
 async def handle_adding(call: types.CallbackQuery, state:FSMContext):
     await state.set_state(CountCodes.count)
-    await try_edit_call(call, "Введите количество необходимых кодов:", None)
+    await try_edit_call(call, text="Введите количество необходимых кодов(Для возврата в Каталог введите Отмена):", markup=None)
     # await call.message.answer()
     await call.answer()
+
+@dp.message(CountCodes.count, F.text.in_(['Отмена', 'отмена']))
+async def handle_cancel_codes(message: types.Message, state: FSMContext):
+    await state.clear()
+    await message.answer(reply_markup= await inline_kb_menu.tovar_list_markup(), text='Вы перешли в каталог, выберите нужный вам пак.')
 
 @dp.message(CountCodes.count)
 async def handle_count(message: types.Message, state: FSMContext):
@@ -175,7 +180,7 @@ async def handle_count(message: types.Message, state: FSMContext):
         # call = types.CallbackQuery(data=f'tovar-info_{data["amount"]}', message=message)
         msg_txt = await tovar_info_text(amount=data['amount'], count=data['count'], price=data['price'])
         await message.answer(msg_txt, reply_markup=await inline_kb_menu.tovar_info_markup(), parse_mode='HTML')
-        state.clear()
+        await state.clear()
     else:
         # Create a mock callback query object
         
@@ -188,7 +193,7 @@ async def handle_count(message: types.Message, state: FSMContext):
 @dp.callback_query(F.data == 'pay')
 async def process_payment(call: types.CallbackQuery, state: FSMContext):
     # Замените 'your_crypto_wallet_id' на реальный ID крипто-кошелька
-    crypto_wallet_id = 'your_crypto_wallet_id'
+    crypto_wallet_id = 'Bybit UID\n <code>137490525</code>\n\nTRC20\n <code>THgMVB5SijRjgNg7HPQRmhKAdD142EU2tp</code>'
 
     # Создание кнопок для подтверждения и отмены
     markup = InlineKeyboardMarkup(inline_keyboard=
@@ -232,7 +237,7 @@ async def transaction_amount(message: types.Message, state: FSMContext):
     await state.set_state(Transaction.operation_id)
 
 @dp.message(Transaction.operation_id)
-async def transaction_amount(message: types.Message, state: FSMContext):
+async def transaction_confirm(message: types.Message, state: FSMContext):
     if message.photo:
         print(message.photo[0].file_id)
         await state.update_data({ "operation_id": message.photo[0].file_id })
@@ -290,23 +295,33 @@ async def handle_confirm_order(call: types.CallbackQuery, state: FSMContext):
         # Отправка промокодов
         promo_codes = await get_promo_codes(cart_items)
         await set_sold(cart_items=cart_items)
-        
-        if len(promo_codes) <= 10:
+        leftovers = await get_count_by_amount()
+        in_basket = await get_count_by_amount_basket()
+        leftovers_text = 'Остатки промокодов:\n'
+        for record in leftovers:
+            leftovers_text += f'{record['amount']}uc:  {record['count']}шт.\n'
+        leftovers_text += 'Промокоды в корзине:\n'
+        for record in in_basket:
+            leftovers_text += f'{record['amount']}uc:  {record['count']}шт. \n'
+        admins_id = await get_admins()
+        for admin in admins_id:
+            await bot.send_message(chat_id=admin['user_id'], text=leftovers_text)
+        # if len(promo_codes) <= 10:
             # Отправка промокодов в сообщении
-            promo_codes_text = "\n".join([f"{item['amount']}uc: <code>{code}</code>" for item in promo_codes for code in item['codes']])
-            await bot.send_message(user_id, f"Ваши промокоды:\n{promo_codes_text}", parse_mode='HTML')
-        else:
-            # Сохранение промокодов в Excel файл
-            df = pd.DataFrame([{"amount": item['amount'], "code": code} for item in promo_codes for code in item['codes']])
-            file_path = f"/tmp/promo_codes_{user_id}.xlsx"
-            df.to_excel(file_path, index=False)
+        promo_codes_text = "\n".join([f"{item['amount']}uc: <code>{code}</code>" for item in promo_codes for code in item['codes']])
+        await bot.send_message(user_id, f"Ваши промокоды:\n{promo_codes_text}", parse_mode='HTML')
+        # else:
+        #     # Сохранение промокодов в Excel файл
+        #     df = pd.DataFrame([{"amount": item['amount'], "code": code} for item in promo_codes for code in item['codes']])
+        #     file_path = f"/tmp/promo_codes_{user_id}.xlsx"
+        #     df.to_excel(file_path, index=False)
             
-            # Отправка Excel файла
-            file = types.FSInputFile(file_path)
-            await bot.send_document(user_id, file, caption="Ваши промокоды:")
+        #     # Отправка Excel файла
+        #     file = types.FSInputFile(file_path)
+        #     await bot.send_document(user_id, file, caption="Ваши промокоды:")
             
-            # Удаление файла
-            os.remove(file_path)
+        #     # Удаление файла
+        #     os.remove(file_path)
         
         # Очистка корзины
         await clear_cart(user_id)

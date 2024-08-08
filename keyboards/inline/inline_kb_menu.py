@@ -15,8 +15,9 @@ admin = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text='⚙️ Изменение цен', callback_data='update_prices')],
         [InlineKeyboardButton(text='📢 Транзакции', callback_data='show_next')],
         [InlineKeyboardButton(text='📋 Пользователи', callback_data='admin_all_users_info')],
-        [InlineKeyboardButton(text='➕ Добавить промокоды', callback_data='list_for_adding')]
-
+        [InlineKeyboardButton(text='➕ Добавить промокоды', callback_data='list_for_adding')],
+        [InlineKeyboardButton(text='👤 Добавить пользователей', callback_data='add_users')],
+        [InlineKeyboardButton(text='🎟️ Промокоды', callback_data='get_all_promos')]
         # [InlineKeyboardButton(text='Назад', callback_data='back_to_menu')]
     ]
 )
@@ -133,11 +134,11 @@ async def admin_adding_promos(page=1):
                      InlineKeyboardButton(text=f'{page}', callback_data=f'_'),
                      InlineKeyboardButton(text='➡️', callback_data=f'admin-category_{page + 1 if pages >= page + 1 else 1}_')])
 
-    btns.append([InlineKeyboardButton(text='⚙️ Добавить товар', callback_data=f'AddNewTovar_{page}_')])
+    # ваbtns.append([InlineKeyboardButton(text='⚙️ Добавить товар', callback_data=f'AddNewTovar_{page}_')])
     # btns.append([InlineKeyboardButton(text='⚙️ Удалить категорию', callback_data=f'DeleteCategory_{page}_{category_id}')])
     btns.append([InlineKeyboardButton(text='Изменить цены', callback_data=f'update_prices')])
 
-    btns.append([InlineKeyboardButton(text='⬅️ Назад', callback_data=f'admin_all_categories')])
+    btns.append([InlineKeyboardButton(text='⬅️ Назад', callback_data=f'admin_menu')])
 
     return InlineKeyboardMarkup(inline_keyboard=btns)
 

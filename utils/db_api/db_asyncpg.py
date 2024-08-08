@@ -7,6 +7,14 @@ async def get_admins():
     async with dp['db_pool'].acquire() as connection:
         return await connection.fetch('SELECT user_id FROM users where isadmin=true')
 
+async def decline_transaction(user_id, file_id):
+    async with dp['db_pool'].acquire() as connection:
+        await connection.fetch("UPDATE transactions WHERE user_id=$1 AND id=$2", user_id, file_id)
+
+async def get_next_pending_transaction():
+    async with dp["db_pool"].acquire() as connection:
+        return await connection.fetch("""SELECT "id", "user_id", "amount", "date", "file_id" FROM "transactions" WHERE "status" = 'OnCheck' LIMIT 1""")
+
 
 async def add_promo(amount, promo):
     # Получите доступ к пулу соединений
@@ -41,7 +49,42 @@ async def get_cart_items(user_id):
 
 async def clear_cart(user_id):
     async with dp["db_pool"].acquire() as connection:
-        await connection.execute('DELETE FROM basket WHERE user_id = $1', user_id)
+        # Начать транзакцию
+        async with connection.transaction():
+            # Получить product_id из корзины
+            product_ids = await connection.fetch('SELECT product_id FROM basket WHERE user_id = $1', user_id)
+            
+            # Если корзина не пуста
+            if product_ids:
+                product_ids_list = [record['product_id'] for record in product_ids]
+
+                # Удалить все записи из корзины для пользователя
+                await connection.execute('DELETE FROM basket WHERE user_id = $1', user_id)
+
+                # Обновить статус продуктов на 'free'
+                
+
+async def button_clear_cart(user_id):
+    async with dp["db_pool"].acquire() as connection:
+        # Начать транзакцию
+        async with connection.transaction():
+            product_ids = await connection.fetch('SELECT product_id FROM basket WHERE user_id = $1', user_id)
+            if product_ids:
+                product_ids_list = [record['product_id'] for record in product_ids]
+            # Получить product_id из корзины
+            # product_ids = await connection.fetch('SELECT product_id FROM basket WHERE user_id = $1', user_id)
+                await connection.execute('''
+                            UPDATE products
+                            SET status = 'Free'
+                            WHERE id = ANY($1::int[])
+                        ''', product_ids_list)
+                await connection.execute('DELETE FROM basket WHERE user_id = $1', user_id)
+
+async def admin_promo():
+    async with dp['db_pool'].acquire() as connection:
+        async with connection.transaction():
+            data = await connection.fetch('SELECT tovar, amount, status FROM products ORDER BY amount ASC')
+            return data
 
 async def get_promo_codes(cart_items):
     promo_codes = []
@@ -142,7 +185,7 @@ async def add_transaction(user_id, amount, operation_id, date=None):
 
 async def get_next_pending_transaction():
     async with dp["db_pool"].acquire() as connection:
-        return await connection.fetch("""SELECT "user_id", "amount", "date", "file_id" FROM "transactions" WHERE "status" = 'OnCheck' LIMIT 1""")
+        return await connection.fetch("""SELECT "id", "user_id", "amount", "date", "file_id" FROM "transactions" WHERE "status" = 'OnCheck' LIMIT 1""")
 
 
 async def get_not_accepted_transactions():
@@ -168,6 +211,27 @@ async def get_price(amount):
             # return decimal_val.quantize(Decimal('0.01'), rounding=ROUND_DOWN)
             return value
 
+async def get_count_by_amount():
+    async with dp['db_pool'].acquire() as connection:
+        query = '''
+            SELECT amount, COUNT(*) as count
+            FROM products WHERE status = 'Free'
+            GROUP BY amount
+            ORDER BY amount;
+        '''
+        result = await connection.fetch(query)
+        return result
+async def get_count_by_amount_basket():
+    async with dp['db_pool'].acquire() as connection:
+        query = '''
+            SELECT amount, COUNT(*) as count
+            FROM products WHERE status = 'Basket'
+            GROUP BY amount
+            ORDER BY amount;
+        '''
+        result = await connection.fetch(query)
+        return result
+
 async def get_promos(amount, count):
     async with dp["db_pool"].acquire() as connection:
         async with connection.transaction():
@@ -191,12 +255,12 @@ async def get_promos(amount, count):
                 ''', product_ids)
             
             return product_ids
-async def user_exists(user_id: int):
+async def user_exists(user_id):
     async with dp['db_pool'].acquire() as connection:
         async with connection.transaction():
-            result = await connection.fetchrow(f'SELECT "user_id" FROM "users" WHERE "user_id"={user_id}')
+            result = await connection.fetchrow(f"""SELECT "username", "fio" FROM "users" WHERE "username"='{user_id}'""")
             print(result)
-            return result is not None
+            return result
 
 
 async def user_info_by_id(user_id):
@@ -220,12 +284,21 @@ async def admin_list():
             return await connection.fetch('SELECT "user_id" FROM "users" WHERE "isadmin"=True')
 
 
-async def add_user(user_id: int, fio: str, referral=None):
+async def add_user(user_id: int, fio: str, username):
     async with dp['db_pool'].acquire() as connection:
         async with connection.transaction():
             dt = datetime.datetime.now()
-            await connection.execute('INSERT INTO "users" ("user_id", "fio", "isadmin", "dt", "balance") '
-                                     'VALUES ($1, $2, $3, $4, $5)', user_id, fio, False, dt, 0)
+            await connection.execute(
+                """UPDATE "users" SET "user_id" = $1, "fio" = $2, "isadmin" = $3, "dt" = $4, "balance" = $5
+                WHERE "username" = $6""",
+                user_id, fio, False, dt, 0, username
+            )
+async def add_user_u(username):
+    async with dp['db_pool'].acquire() as connection:
+        dt = datetime.datetime.now()
+        await connection.execute("""
+            INSERT INTO "users" ("isadmin", "dt", "balance", "username") VALUES ($1, $2, $3, $4)
+        """, False, dt, 0, username)
 
 
 async def user_list():

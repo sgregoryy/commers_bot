@@ -7,9 +7,10 @@ from aiogram.utils.markdown import hlink
 import os
 import asyncio
 import pandas as pd
+from openpyxl import load_workbook
 import openpyxl
 from aiogram.fsm.context import FSMContext
-from states.state import AdminSpam, FSMAdmin, FSMAdminDelete, FSMAdminEdit, TransactionAccept, OnAccpetion, PriceUpdate, PromoCodeState
+from states.state import AdminSpam, FSMAdmin, FSMAdminDelete, FSMAdminEdit, TransactionAccept, OnAccpetion, PriceUpdate, PromoCodeState, AddingUsers
 from utils.db_api.db_asyncpg import *
 
 
@@ -89,10 +90,17 @@ async def hanndle_adding_list(call: types.CallbackQuery):
     await call.message.answer('Выберите пак для добавления:', reply_markup=await inline_kb_menu.admin_adding_promos())
     await call.answer()
     
+@dp.callback_query(F.data.contains('decline_transaction'))
+async def handle_decline(call: types.CallbackQuery):
+    user_id = call.data.split('_')[2]
+    file_id = call.data.split('_')[3]
+    await bot.send_message(user_id, 'Ваше пополнение было отклонено.')
+    await decline_transaction(user_id, file_id)
+    await call.answer()
+
 @dp.callback_query(F.data == 'show_next')
 async def show_next_transaction(call: types.CallbackQuery, state: FSMContext):
     transaction = await get_next_pending_transaction()
-    await try_delete_call(call)
     
     await state.set_state(TransactionAccept.user_id)
     if transaction:
@@ -105,12 +113,12 @@ async def show_next_transaction(call: types.CallbackQuery, state: FSMContext):
             f"Дата: {transaction['date']}\n"
         )
         markup = types.InlineKeyboardMarkup(inline_keyboard=[
-            [types.InlineKeyboardButton(text="Показать следующую", callback_data='show_next')],
-            [types.InlineKeyboardButton(text="Подтвердить перевод", callback_data="accept_transaction"), 
-             types.InlineKeyboardButton(text='Отклонить перевод', callback_data=f'decline_transaction_{transaction['user_id']}')],
+            # [types.InlineKeyboardButton(text="Следующая", callback_data='show_next')],
+            [types.InlineKeyboardButton(text="Подтвердить", callback_data="accept_transaction"), 
+             types.InlineKeyboardButton(text='Отклонить', callback_data=f'decline_transaction_{transaction['user_id']}_{transaction['id']}')],
         ])
         try:
-            await call.message.answer_photo( photo=transaction['file_id'], caption=text, reply_markup=markup)
+            await call.message.answer_photo(photo=transaction['file_id'], caption=text, reply_markup=markup)
         except:
             await call.message.answer(text, reply_markup=markup)
 
@@ -125,10 +133,49 @@ async def show_next_transaction(call: types.CallbackQuery, state: FSMContext):
         ]))
         await call.answer()
 
+@dp.callback_query(F.data == 'add_users')
+async def handle_add_users(call: types.CallbackQuery, state: FSMContext):
+    # await state.update_data( { "amount": amount })
+    await state.set_state(AddingUsers.waiting_for_users)
+    await call.message.answer("Отправьте теги. Каждый тэг должен быть в отдельной строке. Когда закончите, напишите 'Готово'.")
+    await call.answer()
+
+# Хендлер для получения промокодов
+@dp.message(AddingUsers.waiting_for_users)
+async def handle_promocodes(message: types.Message, state: FSMContext):
+    # Если пользователь написал 'Готово', завершаем сбор промокодов
+    if message.text.strip().lower() == 'готово':
+        await message.reply("Пользователи добавлены.", reply_markup=types.InlineKeyboardMarkup(
+        inline_keyboard=[
+            [types.InlineKeyboardButton(text='В меню', callback_data='admin_menu')]
+        ]))
+        await state.clear()
+        return
+    data = await state.get_data()
+    # Получаем промокоды из сообщения, разделенные строками
+    usernames = message.text.split('\n')
+    for user in usernames:
+        await add_user_u(user)
+
+    await message.reply("Пользователи добавлены. Если у вас есть еще пользователи, отправьте их. Если все, напишите 'Готово'.")
+
+# Хендлер для обработки команды /cancel
+@dp.message(F.text.in_(['готово', 'Готово']), AddingUsers.waiting_for_users)
+async def cancel_cmd(message: types.Message, state: FSMContext):
+    await state.clear()
+    await message.reply("Добавление пользователей окончено.", reply_markup=types.InlineKeyboardMarkup(
+        inline_keyboard=[
+            [types.InlineKeyboardButton(text='В меню', callback_data='admin_menu')]
+        ]
+    ))
+
+
 @dp.callback_query(F.data.contains('decline_transaction'))
 async def handle_decline(call: types.CallbackQuery):
     user_id = call.data.split('_')[2]
+    file_id = call.data.split('_')[3]
     await bot.send_message(user_id, 'Ваше пополнение было отклонено.')
+    await decline_transaction(user_id, file_id)
     await call.answer()
 
 @dp.callback_query(F.data == 'accept_transaction', TransactionAccept.accept)
@@ -141,13 +188,52 @@ async def accept_transaction_admin(call: types.CallbackQuery, state: FSMContext)
     await bot.send_message(chat_id=data['user_id'], text=f"Пополнение одобрено! Сумма: <code>{data['amount']} USDT </code>", parse_mode='HTML')
     
     # Удалить сообщение администратора через 3 секунды
-    await asyncio.sleep(3)
-    await try_delete_call(call)
+    # await asyncio.sleep(3)
+    # await try_delete_call(call)
     
     await call.answer()
     
     # Fetch and show the next pending transaction after accepting
     await show_next_transaction(call, state)
+
+@dp.callback_query(F.data == 'get_all_promos')
+async def admin_get_all_promos(call: types.CallbackQuery):
+    # Получение данных из admin_promo
+    data = await admin_promo()
+    
+    # Преобразование данных в DataFrame
+    df = pd.DataFrame(data, columns=['tovar', 'amount', 'status'])
+    
+    # Разделение данных на две группы: "Sold" и остальные
+    df_sold = df[df['status'] == 'Sold']
+    df_other = df[df['status'] != 'Sold']
+    
+    # Путь для сохранения Excel-файла
+    output_file = 'products_export.xlsx'
+    
+    # Сохранение данных в Excel на разных листах
+    with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
+        df_other.to_excel(writer, sheet_name='Other', index=False)
+        df_sold.to_excel(writer, sheet_name='Sold', index=False)
+    
+    # Загрузка созданного Excel-файла для изменения ширины столбца
+    workbook = load_workbook(output_file)
+    
+    # Настройка ширины столбцов на обоих листах
+    worksheet_other = workbook['Other']
+    worksheet_sold = workbook['Sold']
+    
+    worksheet_other.column_dimensions['A'].width = 30
+    worksheet_sold.column_dimensions['A'].width = 30
+    
+    # Сохранение изменений
+    workbook.save(output_file)
+    
+    # Отправка файла пользователю
+    await call.message.answer_document(FSInputFile(output_file))
+    
+    # Удаление файла после отправки
+    os.remove(output_file)
 
 @dp.callback_query(F.data=='admin_all_users_info')
 async def admin_all_users_info(call: types.CallbackQuery):
@@ -237,7 +323,7 @@ async def handle_adding_start(call: types.CallbackQuery, state: FSMContext):
     amount = int(call.data.split('_')[1])
     await state.update_data( { "amount": amount })
     await state.set_state(PromoCodeState.waiting_for_promocodes)
-    await call.message.answer("Отправьте промокоды. Каждый промокод должен быть в отдельной строке. Когда закончите, напишите 'Готово'.")
+    await call.message.answer(f"Отправьте промокоды на {amount}uc. Каждый промокод должен быть в отдельной строке. Когда закончите, напишите 'Готово'.")
     await call.answer()
 
 # Хендлер для получения промокодов
@@ -263,7 +349,7 @@ async def handle_promocodes(message: types.Message, state: FSMContext):
 @dp.message(F.text.in_(['готово', 'Готово']), PromoCodeState.waiting_for_promocodes)
 async def cancel_cmd(message: types.Message, state: FSMContext):
     await state.clear()
-    await message.reply("Сбор промокодов отменен.", reply_markup=types.InlineKeyboardMarkup(
+    await message.reply("Сбор промокодов окончен.", reply_markup=types.InlineKeyboardMarkup(
         inline_keyboard=[
             [types.InlineKeyboardButton(text='В меню', callback_data='admin_menu')]
         ]
